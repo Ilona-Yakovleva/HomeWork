@@ -1,12 +1,9 @@
 package goods;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class Good {
     static final int size = 5;
     private static int id = 0;
-    static int list_count = 0;
+    static int listCount = 0;
     public static Good [] list = new Good[size];
     int ID;
     String name;
@@ -23,8 +20,8 @@ public class Good {
         this.count = count;
         this.price = price;
         this.description = description;
-        list[list_count] = this;
-        ++list_count;
+        list[listCount] = this;
+        ++listCount;
     }
 
     public static void change_name (int id, String new_name) { // изменение наименования товара

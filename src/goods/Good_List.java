@@ -1,6 +1,5 @@
 package goods;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -28,7 +27,7 @@ public class Good_List {
                     Good.list[j] = Good.list[j + 1];
                 }
                 Good.list[Good.size - 1] = null;
-                --Good.list_count;
+                --Good.listCount;
                 break;
             }
         }
@@ -45,7 +44,7 @@ public class Good_List {
     }
 
     public static void add(Scanner scanner, Scanner str_scanner) { // добавление товара
-        if (Good.list_count == Good.size) {
+        if (Good.listCount == Good.size) {
             System.out.println("Нельзя больше добавлять товары, список заполнен");
             return;
         }

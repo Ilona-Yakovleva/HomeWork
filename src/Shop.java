@@ -6,7 +6,7 @@ public class Shop {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        Scanner str_scanner = new Scanner(System.in);
+        Scanner strScanner = new Scanner(System.in);
 
         byte choise = 77;
 
@@ -47,7 +47,7 @@ public class Shop {
                         switch (choise_in_card) {
                             case 1:
                                 System.out.println("Введите новое наименование:");
-                                String name1 = str_scanner.nextLine();
+                                String name1 = strScanner.nextLine();
                                 Good.change_name(id, name1);
                                 break;
                             case 2:
@@ -62,7 +62,7 @@ public class Shop {
                                 break;
                             case 4:
                                 System.out.println("Введите новое описание:");
-                                String descr = str_scanner.nextLine();
+                                String descr = strScanner.nextLine();
                                 Good.change_description(id, descr);
                                 break;
                             case 0:
@@ -75,7 +75,7 @@ public class Shop {
                     }
                     break;
                 case 3:
-                    Good_List.add(scanner, str_scanner);
+                    Good_List.add(scanner, strScanner);
                     break;
                 case 4:
                     System.out.println("Введите ID товара для удаления:");
